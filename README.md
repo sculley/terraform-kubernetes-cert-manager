@@ -1,4 +1,4 @@
-# terraform-cert-manager
+# terraform-kubernetes-cert-manager
 Terraform module which deploys cert-manager to a Kubernetes cluster
 
 # Description
@@ -41,7 +41,7 @@ Paste the following configuration into ```main.tf``` and save it.
 
 ```hcl
 module "cert_manager" {
-  source = "github.com/sculley/terraform-cert-manager"
+  source = "github.com/sculley/terraform-kubernetes-cert-manager"
 
   replica_count = 2
 }
