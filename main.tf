@@ -23,4 +23,8 @@ resource "helm_release" "cert_manager" {
       replica_count = var.replica_count
     })
   ]
+
+  depends_on = [ 
+    kubernetes_namespace.cert_manager_namespace
+   ]
 }
